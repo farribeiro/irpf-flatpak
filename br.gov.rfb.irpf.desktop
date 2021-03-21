@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.1
+Name=IRPF 2021
+Comment=Imposto de Renda para Pessoa Fisica
+Exec=/app/irpf.sh
+Type=Application
+Categories=Utility;
+Keywords=irpf2021;darf;Imposto de Renda para Pessoa Fisica;
