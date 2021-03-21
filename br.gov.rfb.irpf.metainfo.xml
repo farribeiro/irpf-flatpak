@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File based on https://gitlab.gnome.org/World/Authenticator/-/blob/72f10e95f52d76d5b8b2f47f2ae3de71cffa7ec2/data/com.belmoussaoui.Authenticator.metainfo.xml.in.in -->
+<component type="desktop-application">
+  <id>@app-id@</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Imposto de Renda para Pessoa Fisica</name>
+  <summary>Declaração do Imposto de Renda</summary>
+  <description>
+    <p>Declare o imposto de renda de pessoa física para a Receita Federal da República Federativa do Brasil</p>
+    <p>Adendos:</p>
+    <p>Este não é um aplicativo oficial do governo</p>
+    <p>Este app destina-se a facilitar o download e instalação do aplicativo IRPF-2021, contido na página oficial da receita (<url>https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf</url>) pelo cidadão brasileiro, cuidando também da instalação de um ambiente virtual Java, necessário para sua execução</p>
+    <p>Em caso de dúvidas de como o app é montado, verifique o manifest em <url>https://github.com/farribeiro/irpf-flatpak/blob/master/br.gov.rfb.irpf.yml </url>. Mais informações de como funciona o flatpak em <url>https://docs.flatpak.org/</url></p>
+    <p>Caso não tenha confiança no método exposto, favor não realizar a instalação</p>
+  </description>
+  <url type="homepage">:https://github.com/farribeiro/irpf-flatpak</url>
+  <url type="bugtracker">https://github.com/farribeiro/irpf-flatpak/issues</url>
+  <url type="translate">null/</url>
+  <url type="donation">null</url>
+  <content_rating type="null" />
+  <releases>
+    <release version="21.1.2" date="2021-03-21">
+      <description>
+        <ul>
+          <li>Initial release</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <kudos>
+    <!--
+        GNOME Software kudos:
+        https://gitlab.gnome.org/GNOME/gnome-software/blob/master/doc/kudos.md
+      -->
+    <kudo>null</kudo>
+  </kudos>
+  <provides>
+    <id>br.gov.rfb.irpf</id>
+  </provides>
+  <developer_name>Fábio Rodrigues Ribeiro</developer_name>
+  <update_contact>farribeiro@gmail.com</update_contact>
+  <translation type="gettext">null</translation>
+  <launchable type="desktop-id">@app-id@.desktop</launchable>
+</component>
