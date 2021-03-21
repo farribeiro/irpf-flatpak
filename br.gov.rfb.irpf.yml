@@ -1,5 +1,5 @@
 app-id: br.gov.rfb.irpf
-branch: master
+branch: stable
 runtime: org.freedesktop.Platform
 runtime-version: '20.08'
 sdk-extensions: org.freedesktop.Sdk.Extension.openjdk11
@@ -12,7 +12,6 @@ modules:
       - /usr/lib/sdk/openjdk11/install.sh
       - sh install.sh
       - install -D br.gov.rfb.irpf.desktop /app/share/applications/br.gov.rfb.irpf.desktop
-      - desktop-file-validate /app/share/applications/br.gov.rfb.irpf.desktop
     sources:
       - type: archive
         url: https://downloadirpf.receita.fazenda.gov.br/irpf/2021/irpf/arquivos/IRPF2021-1.2.zip
