@@ -1,4 +1,4 @@
-app-id: br.gov.rfb.iprf
+app-id: br.gov.rfb.irpf
 branch: 1.2
 runtime: org.freedesktop.Platform
 runtime-version: '20.08'
