@@ -1,0 +1,39 @@
+app-id: br.gov.rfb.iprf
+branch: 1.2
+runtime: org.freedesktop.Platform
+runtime-version: '20.08'
+sdk-extensions: org.freedesktop.Sdk.Extension.openjdk11
+sdk: org.freedesktop.Sdk
+command: /app/irpf.sh
+modules:
+  # - name: openjdk
+  #   buildsystem: simple,
+  #   build-commands:
+  #     - find / -name install.sh
+  - name: irpf
+    buildsystem: simple
+    build-commands:
+      - /usr/lib/sdk/openjdk11/install.sh
+      - sh install.sh
+    sources:
+      - type: archive
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2021/irpf/arquivos/IRPF2021-1.2.zip
+        sha256: bcc056d940581a4d6be396633bb87b421dc04c96146f174a3add497f3a1adafa
+      - type: file
+        path: irpf.sh
+      - type: file
+        path: install.sh
+finish-args:
+  # X11 + XShm access
+  - --share=ipc
+  - --socket=x11
+  # Wayland access
+  - --socket=wayland
+  # Needs to talk to the network:
+  - --share=network
+  # Needs to save files locally
+  - --filesystem=xdg-documents
+  - --filesystem=home
+  - --env=PATH=$PATH:/app/jre/bin:/usr/bin
+# cleanup:
+#   - '/IRPF2021'
