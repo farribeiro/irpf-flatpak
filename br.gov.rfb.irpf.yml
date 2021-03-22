@@ -32,7 +32,7 @@ finish-args:
   - --share=network
   # Needs to save files locally
   - --filesystem=xdg-documents
-  - --filesystem=home
+  - --filesystem=home/ProgramasRFB
   - --env=PATH=$PATH:/app/jre/bin:/usr/bin
 # cleanup:
 #   - '/IRPF2021'
