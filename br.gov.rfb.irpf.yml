@@ -14,8 +14,8 @@ modules:
       - install -D br.gov.rfb.irpf.desktop /app/share/applications/br.gov.rfb.irpf.desktop
     sources:
       - type: archive
-        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2021/irpf/arquivos/IRPF2021-1.2.zip
-        sha256: bcc056d940581a4d6be396633bb87b421dc04c96146f174a3add497f3a1adafa
+        url: https://downloadirpf.receita.fazenda.gov.br/irpf/2021/irpf/arquivos/IRPF2021-1.9.zip
+        sha256: 1d0cdbb00e141caf2d65b85be88b560b86b3633bf117b7d34221659b89c8e5ee
       - type: file
         path: irpf.sh
       - type: file
