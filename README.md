@@ -58,14 +58,14 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 Para estas etapas não é necessário perfil de administrador
 ```
 # Instalar runtime do container
-flatpak install flathub runtime/org.freedesktop.Platform//20.08
+flatpak install flathub runtime/org.freedesktop.Platform//21.08
 
 # Instalar SDK e extensão responsável pelo ambiente java
-flatpak install flathub org.freedesktop.Sdk//20.08
-flatpak install flathub org.freedesktop.Sdk.Extension.openjdk11//20.08
+flatpak install flathub org.freedesktop.Sdk//21.08
+flatpak install flathub org.freedesktop.Sdk.Extension.openjdk11//21.08
 
 # entrar na pasta em que ficará o projeto (pode ser modificada)
-cd ~/Dowmloads
+cd ~/Downloads
 
 # criar cópia do projeto localmente
 git clone https://github.com/farribeiro/irpf-flatpak.git
