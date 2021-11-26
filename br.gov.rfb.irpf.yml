@@ -11,7 +11,7 @@ modules:
     build-commands:
       - /usr/lib/sdk/openjdk11/install.sh
       - sh install.sh
-      - install -D br.gov.rfb.irpf.desktop /app/share/applications/br.gov.rfb.irpf.desktop
+      - install -Dm644 br.gov.rfb.irpf.desktop /app/share/applications/br.gov.rfb.irpf.desktop
     sources:
       - type: archive
         url: https://downloadirpf.receita.fazenda.gov.br/irpf/2021/irpf/arquivos/IRPF2021-1.9.zip
