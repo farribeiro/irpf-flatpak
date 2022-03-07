@@ -1,5 +1,6 @@
 app-id: br.gov.rfb.irpf
 branch: stable
+tags: [proprietary]
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk-extensions: org.freedesktop.Sdk.Extension.openjdk11
