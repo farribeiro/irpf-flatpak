@@ -1,9 +1,9 @@
 app-id: br.gov.rfb.irpf
 branch: stable
 tags: [proprietary]
-runtime: org.freedesktop.Platform
-runtime-version: '21.08'
-sdk: org.freedesktop.Sdk
+runtime: org.gnome.Platform
+runtime-version: '42'
+sdk: org.gnome.Sdk
 command: /app/irpf.sh
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -38,5 +38,7 @@ finish-args:
   # Java paths
   - --env=PATH=$PATH:/app/jre/bin:/usr/bin
   - --env=JAVA_HOME=/app/jre
+  - --talk-name=org.gtk.vfs.*
+  - --filesystem=xdg-run/gvfsd
 # cleanup:
 #   - '/IRPF2021'
