@@ -18,8 +18,11 @@ modules:
       - type: archive
         url: https://downloadirpf.receita.fazenda.gov.br/irpf/2022/irpf/arquivos/IRPF2022-1.0.zip
         sha256: 91fe293c0daa1ac857640f9d66c6f2db117df07427a17c74e7fe518fdddc73bc
-      - type: file
-        path: irpf.sh
+      - type: script
+        dest-filename: irpf.sh
+        dest: bin
+        commands:
+          - java -jar /app/irpf.jar
       - type: file
         path: install.sh
       - type: file
