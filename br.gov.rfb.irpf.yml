@@ -4,9 +4,9 @@ tags: [proprietary]
 runtime: org.gnome.Platform
 runtime-version: '42'
 sdk: org.gnome.Sdk
-command: /app/irpf.sh
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
+command: irpf.sh
 modules:
   - name: irpf
     buildsystem: simple
