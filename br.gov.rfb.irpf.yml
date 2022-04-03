@@ -3,9 +3,10 @@ branch: stable
 tags: [proprietary]
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
-sdk-extensions: org.freedesktop.Sdk.Extension.openjdk11
 sdk: org.freedesktop.Sdk
 command: /app/irpf.sh
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.openjdk11
 modules:
   - name: irpf
     buildsystem: simple
