@@ -61,7 +61,7 @@ Para estas etapas não é necessário perfil de administrador
 flatpak install flathub runtime/org.freedesktop.Platform//21.08
 
 # Instalar SDK e extensão responsável pelo ambiente java
-flatpak install flathub org.freedesktop.Sdk//21.08
+flatpak install flathub org.gnome.Sdk//21.08
 flatpak install flathub org.freedesktop.Sdk.Extension.openjdk11//21.08
 
 # entrar na pasta em que ficará o projeto (pode ser modificada)
