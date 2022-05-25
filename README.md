@@ -58,7 +58,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 Para estas etapas não é necessário perfil de administrador
 ```
 # Instalar runtime do container
-flatpak install flathub runtime/org.freedesktop.Platform//21.08
+flatpak install flathub runtime/org.gnome.Platform//21.08
 
 # Instalar SDK e extensão responsável pelo ambiente java
 flatpak install flathub org.gnome.Sdk//21.08
